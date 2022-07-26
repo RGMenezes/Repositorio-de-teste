@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Handlee & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Fredericka+the+Great & display=swap');
+
+:root{
+    --cor1: #FF1053;
+    --cor2: #8C1A6A;
+    --cor3: #1282A2; 
+    --cor4: #034078;
+    --cor5: #0A1128;
+
+    --font-p: 'Handlee', cursiva;
+    --font-s: 'Frederika, o Grande', cursiva;
+    --font-g: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    padding: 0px;
+    background-color: var(--cor5);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    
+}
+header div{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    padding: 0px 3px 3px 3px;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+header h1{
+    font: normal bold 3em var(--font-g);
+    background-color: var(--cor5);
+    width: 300px;
+    height: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.e{
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    z-index: -1;
+}
+.d{
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    z-index: -1;
+}
+
+
+section{
+    padding-top: 150px;
+}
