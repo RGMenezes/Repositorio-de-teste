@@ -4,5 +4,5 @@
 <a href="https://rgmenezes.github.io/Repositorio-de-teste/Modelos%20de%20sites/Modelo%20001/" hreflang="pt-br">Modelo 001</a>
 
 ## Projetos
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Projetos/jogo%20da%20velha/" hreflang="pt-br">Jogo da velha</a>  
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Projetos/Game%20de%20masmorra/console.html" hreflang="pt-br">Jogo de masmorra</a>
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Games/jogo%20da%20velha/" hreflang="pt-br">Jogo da velha</a>  
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Games/Game%20de%20masmorra/console.html" hreflang="pt-br">Jogo de masmorra</a>
