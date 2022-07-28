@@ -3,6 +3,5 @@
 
  Este repósitório tem como objetivo demonstrar testes, tentativas, erros, ideias e criatividade do seu criador!
 
-#Navegando pelos arquivos
 
 
