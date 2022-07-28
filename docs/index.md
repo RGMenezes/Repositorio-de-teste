@@ -5,4 +5,4 @@
 
 ## Projetos
 <a href="https://rgmenezes.github.io/Repositorio-de-teste/Projetos/jogo%20da%20velha/" hreflang="pt-br">Jogo da velha</a>  
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Projetos/Game%20de%20masmorra/" hreflang="pt-br">Jogo de masmorra</a>
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Projetos/Game%20de%20masmorra/console.html" hreflang="pt-br">Jogo de masmorra</a>
