@@ -693,15 +693,6 @@ function ia(){
         }else if(contador == 3){
             contador += 1
             if(jogada.cinco === "O"){
-                if(jogada.tres == "X" && jogada.sete == "X"){
-                    if(j == 3){
-                        if(iden_jogada(jogada.dois) == true){
-                            jogada.dois = "O"
-                            p2.innerText = "O"
-                            j += 1
-                        }
-                    }
-                }
                 if(jogada.seis == "X" && jogada.oito == "X"){
                     if(j == 3){
                         if(iden_jogada(jogada.nove) == true){
@@ -722,15 +713,6 @@ function ia(){
                 }
 
             }else{
-                if(jogada.cinco == "X" && jogada.nove == "X"){
-                    if(j == 3){
-                        if(iden_jogada(jogada.tres) == true){
-                            jogada.tres = "O"
-                            p3.innerText = "O"
-                            j += 1
-                        }
-                    }
-                }
                 if(j == 3 && nivel_dif === "Complicado" || nivel_dif === "Impossivel"){
                     jogada_vitoria(j)
                 }
