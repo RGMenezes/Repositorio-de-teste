@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div#dificuldades{
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.circulo{
+    background-color: rgba(20, 20, 20, 0);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+.circulo:hover{
+    background-color: gray;
+}
+.circulo:active{
+    padding: 3px 12px;
+}
+
+main{
+    background-color: aliceblue;
+    color: black;
+    max-width: 500px;
+    min-width: 100px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+section{
+    margin: auto;
+    width: 304px;
+    height: 310px;
+    padding: 1px;
+    border: 5px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.superior, .meio, .inferior{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    margin: auto;
+    padding: 0px;
+}
+
+.barra_v{
+    background-color: black;
+    height: 100px;
+    width: 5px;
+}
+.barra_h{
+    background-color: black;
+    height: 5px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.bloco{
+    width: 100px;
+    height: 97px;
+    margin: 2px 2px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal bold 100px Verdana, sans-serif;
+    border-radius: 5px;
+}
+.bloco:hover{
+    background-color: grey;
+}
+.bloco:active{
+    background-color: rgb(255, 255, 255);
+}
+
+.resposta{
+    margin: 25px;
+    font: normal normal 1em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="fundo">
+    <h1>Jogo da velha online</h1>
+    <h2>Dificuldade</h2>
+    <div id="dificuldades">
+        <span onclick="dif_e()" class="circulo">&#x2B05</span>
+        <span id="dif">Normal</span>
+        <span onclick="dif_d()" class="circulo">&#x27A1</span>
+    </div>
+    <main>
+        <section>
+            <div class="superior">
+                <span onclick="j1(); game(); ia();" id="s-1" class="bloco"></span><div class="barra_v"></div>
+                <span onclick="j2(); game(); ia();" id="s-2" class="bloco"></span><div class="barra_v"></div>
+                <span onclick="j3(); game(); ia();" id="s-3" class="bloco"></span>
+            </div>
+            <div class="barra_h"></div>
+            <div class="meio">
+                <span onclick="j4(); game(); ia();" id="m-1" class="bloco"></span><div class="barra_v"></div>
+                <span onclick="j5(); game(); ia();" id="m-2" class="bloco"></span><div class="barra_v"></div>
+                <span onclick="j6(); game(); ia();" id="m-3" class="bloco"></span>
+            </div>
+            <div class="barra_h"></div>
+            <div class="inferior">
+                <span onclick="j7(); game(); ia();" id="i-1" class="bloco"></span><div class="barra_v"></div>
+                <span onclick="j8(); game(); ia();" id="i-2" class="bloco"></span><div class="barra_v"></div>
+                <span onclick="j9(); game(); ia();" id="i-3" class="bloco"></span>
+            </div>
+        </section>
+    </main>
+    <div id="res" class="resposta">Faça um movimento para começar o jogo!</div>
+    <script src="script.js"></script>
+</body>
+</html>

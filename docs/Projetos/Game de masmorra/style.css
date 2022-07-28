@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Rye';
+    src: url(font/Rye-Regular.ttf);
+}
+
+*{
+    margin: auto;
+}
+
+body{
+    background-color: #011D30;
+    background-image: url(imagens/fundo-do-corpo.jpg);
+    background-size: cover;
+    background-position: center, center;
+
+}
+
+header{
+    color: #0590ED;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    font:normal bold 2em 'Rye', cursiva;
+    margin: 50px 0px 50px 0px;
+}
+
+section{
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
+    text-align: center;
+    padding: 15px 0px;
+    margin-bottom: 80px;
+}
+
+div#ad{
+    color: #ffffff;
+    background-color: #011D30;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 3px;
+    font: normal normal 2em 'Rye', cursiva;
+    border: 3px solid #0590ED;
+    border-radius: 10px;
+}
+
+.intencao{
+    font: normal normal 1.3em 'Rye', sans-serif;
+    height: 70px;
+}
+
+.dados{
+    display: flex;
+}
+
+.player, .ia{
+    background-color: #011D30;
+    background-image: linear-gradient(0deg, black, #011D30);
+    border: solid 2px #0590ED;
+    font: normal normal 0.9em Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+.ia > h1{
+    margin: 5px 0px;
+    font-family: 'Rye', sans-serif;
+}
+.player > h1{
+    margin: 5px 0px;
+    font-family: 'Rye', sans-serif;
+}
+
+.bt{
+    font: normal normal 1em 'Rye', sans-serif;
+    color: #ffffff;
+    background-color: #011D30;
+    border: 2px solid #0590ED;
+    border-radius: 10px;
+    width: 100px;
+    margin: 5px 30px;
+
+}
+.bt:hover{
+    color: #0590ED;
+    padding: 2px;
+    margin: 3px 30px;
+}
+.bt:active{
+    color: #024C7D;
+}
+
+.bt2{
+    font: normal normal 1em 'Rye', sans-serif;
+    color: #ffffff;
+    background-color: #011D30;
+    border: 2px solid #0590ED;
+    border-radius: 10px;
+    width: 100px;
+    margin: 5px 30px;
+
+}
+.bt2:hover{
+    color: #0590ED;
+    padding: 2px;
+    margin: 4px 30px;
+}
+.bt2:active{
+    color: #024C7D;
+}
+
+.narrar{
+    font: normal bold 1em Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    height: 50px;
+}
+
+.si{
+    font: normal bold 1em Verdana, Geneva, Tahoma, sans-serif;
+}
+.si:hover{
+    color: #0590ED;
+    font-size: 18px;
+    height: 18px;
+}
+.si:active{
+    color: #011D30;
+}
+.no{
+    font: normal bold 1em Verdana, Geneva, Tahoma, sans-serif;
+    height: 18px;
+}
+.no:hover{
+    color: #0590ED;
+    font-size: 18px;
+}
+.no:active{
+    color: #011D30;
+}
+
+footer{
+    font: normal normal 0.7em Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}

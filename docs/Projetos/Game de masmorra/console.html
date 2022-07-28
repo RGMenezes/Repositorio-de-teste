@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Masmorra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>A Masmorra</h1>
+    </header>
+    <main>
+        <section>
+            <div id="ad">Andar: <span id="andar">0</span></div>
+            <div class="intencao">Provavel intenção do inimigo <br> <span id="intencao"></span> </div>
+            <div class="dados">
+                <div class="player">
+                    <h1><span id="nome-p">test</span></h1>
+                    Experiência: <span id="exp-p">test</span><br>
+                    Vida: <span id="vida-p">test</span><br>
+                    Ataque: <span id="ataque-p">test</span><br>
+                    Defesa: <span id="defesa-p">test</span>
+                    <div id="movp">
+                        Seu movimento
+                    </div>
+                </div>
+                <div class="ia">
+                    
+                    <h1><span id="nome-i">test</span></h1>
+                    Experiência: <span id="exp-i">test</span><br>
+                    Vida: <span id="vida-i">test</span><br>
+                    Ataque: <span id="ataque-i">test</span><br>
+                    Defesa: <span id="defesa-i">test</span>
+                    <div id="movi">
+                        Mov. do inimigo
+                    </div>
+                </div>
+            </div>
+            <input class="bt" type="button" value="Ataque" onclick="ataque()">
+            <input class="bt" type="button" value="Defesa" onclick="defesa()">
+            <br>
+            <input class="bt2" type="button" value="Avançar" onclick="avancar()">
+            <div class="narrar" id="narrar">Prepare-se para entrar na jornada mais desafiadora de sua vida!!! Click em avançar para começar.</div>
+            <div>
+                <div class="si" id="sim"></div>
+                <div class="no" id="nao"></div>
+            </div>
+
+            <footer>Obra arquitetada e criada por Rafael Menezes. </footer>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
