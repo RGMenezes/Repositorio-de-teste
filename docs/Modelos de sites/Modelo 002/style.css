@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{
+    --font_g: 'M PLUS Rounded 1c', sans-serif;
+    --font_p1: 'Fredoka One', cursive;
+    --font_p2: 'Monoton', cursive;
+
+    --cor1: #F7F9F7;
+    --cor2: #DBF9F0;
+    --cor3: #B3DEC1;
+    --cor4: #750D37;
+    --cor5: #210124;
+
+}
