@@ -4,6 +4,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
+@keyframes sublinhado {
+    0%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 45%, var(--cor5)45%, var(--cor5) 55%, var(--cor1)55%);
+    }
+    10%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 40%, var(--cor5)40%, var(--cor5) 60%, var(--cor1)60%);
+    }
+    20%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 35%, var(--cor5)35%, var(--cor5) 65%, var(--cor1)65%);
+    }
+    30%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 30%, var(--cor5)30%, var(--cor5) 70%, var(--cor1)70%);
+    }
+    40%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 25%, var(--cor5)25%, var(--cor5) 75%, var(--cor1)75%);
+    }
+    50%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 20%, var(--cor5)20%, var(--cor5) 80%, var(--cor1)80%);
+    }
+    60%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 15%, var(--cor5)15%, var(--cor5) 85%, var(--cor1)85%);
+    }
+    70%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 10%, var(--cor5)10%, var(--cor5) 90%, var(--cor1)90%);
+    }
+    80%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 5%, var(--cor5)5%, var(--cor5) 95%, var(--cor1)95%);
+    }
+    90%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 2%, var(--cor5)2%, var(--cor5) 98%, var(--cor1)98%);
+    }
+    100%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 0%, var(--cor5)0%, var(--cor5) 100%, var(--cor1)100%);
+    }
+}
+
 :root{
     --font_g: 'M PLUS Rounded 1c', sans-serif;
     --font_p1: 'Fredoka One', cursive;
@@ -26,13 +84,61 @@ header{
     border-bottom: 3px solid var(--cor5);
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header > img{
     max-width: 100px;
-    margin-left: 10px;
+    margin-left: 5%;
     
 }
+header > span > input{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    font: normal normal 0.9em var(--font_p1);
+    border: 2px solid var(--cor5);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.buscar{
+    background-color: var(--cor5);
+    color: var(--cor3);
+}
+.buscar:hover{
+    color: var(--cor5);
+}
+header > span > input:hover{
+    background-color: var(--cor2)
+}
+header > span > input:active{
+    background-color: var(--cor1);
+    position: relative;
+    transition: all 0.1s;
+    transform: scale(1.1);
+}
+header > nav{
+    margin-right: 5%;
+}
+header > nav > a{
+    margin: 5px;
+    color: var(--cor4);
+    text-decoration: none;
+    font: normal normal 1em var(--font_p1);
+}
+header > nav > a > span{
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor1);
+}
+header > nav > a:hover{
+    animation: sublinhado 0.2s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
+header > nav > a > span:active{
+    transition: all 0.3s;
+    color: var(--cor3);
+}
+
