@@ -224,3 +224,69 @@ section a:active{
     transition: all 0.5s;
     transform: scale(3.0);
 }
+
+main{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+main > section{
+    max-width: 800px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: center;
+}
+
+main > section > aside{
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.336);
+    padding: 0px 0px 50px 0px; 
+}
+main > section > aside > ul{
+    font: normal normal 0.9em var(--font_g);
+}
+
+.p_normal{
+    background-color: var(--cor3);
+}
+.p_normal > h1, ul{
+    color: var(--cor5);
+}
+.p_normal li{
+    margin: 8px 0px;
+}
+
+.p_pro{
+    background-color: var(--cor5);
+}
+.p_pro > ul, h1{
+    color: var(--cor3);
+}
+.p_pro li{
+    margin: 8px 0px;
+}
+
+h1{
+    font: normal normal 3.2em var(--font_p1);
+    text-align: center;
+    margin: 10px 0px 8px 0px;
+    color: var(--cor4);
+}
+h2{
+    font: normal normal 2em var(--font_p1);
+    text-indent: 20px;
+    margin: 15px 0px 5px 0px;
+}
+h3{
+    font: normal normal 1.5em var(--font_p1);
+    text-indent: 10px;
+    margin-top: 5px;
+}
+p{
+    font: normal normal 1.2em var(--font_g);
+    text-align: justify;
+}
