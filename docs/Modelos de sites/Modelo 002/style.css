@@ -88,6 +88,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 header > img{
     max-width: 100px;
@@ -126,6 +127,7 @@ header > nav > a{
     color: var(--cor4);
     text-decoration: none;
     font: normal normal 1em var(--font_p1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.445);
 }
 header > nav > a > span{
     width: 100%;
@@ -142,3 +144,83 @@ header > nav > a > span:active{
     color: var(--cor3);
 }
 
+.conteiner1 {
+    padding-top: 100px;
+    display: flex;
+    justify-content:  space-around;
+    margin-bottom: 30px;
+}
+.conteiner1 aside{
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.336);
+}
+.conteiner1 h3{
+    font: normal 800 1.1em var(--font_g);
+    color: var(--cor5);
+    text-indent: 5px;
+    margin: 3px;
+}
+.conteiner1 p{
+    font: normal normal 1em var(--font_g);
+    text-align: justify;
+    text-indent: 20px;
+}
+
+section{
+    background-color: var(--cor5);
+    padding: 30px 20px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+section article{
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+section h1{
+    color: var(--cor3);
+    font: normal normal 3em var(--font_p2);
+    text-align: center;
+}
+section p{
+    color: var(--cor2);
+    font: normal normal 1.3em var(--font_g);
+    text-align: justify;
+}
+section nav{
+    margin: 20px auto;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: center;
+}
+section a{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font: normal normal 2em var(--font_p1);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid var(--cor4);
+}
+section a:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+section a:active{
+    transition: all 0.5s;
+    transform: scale(3.0);
+}
