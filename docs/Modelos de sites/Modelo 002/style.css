@@ -333,3 +333,137 @@ footer span:active{
     transition: all 0.3s;
     color: var(--cor3);
 }
+@media (max-width: 1100px){
+    section nav{
+        height: 750px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+
+@media (max-width: 800px){
+    header > img{
+        height: 40px;
+        margin-right: 10px;
+    }
+    header > span > input{
+        font: normal normal 0.8em var(--font_p1);
+    }
+    .buscar{
+        margin-right: 20px;
+    }
+    header > nav{
+        position: fixed;
+        top: 80px;
+        left: -1000px;
+        background-color: var(--cor1);
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.322);
+        padding: 5px;
+        border: 2px solid var(--cor5);
+    }
+    header > nav > a{
+        font: normal normal 0.9em var(--font_p1);
+        margin: 10px 5px;
+    }
+    header:hover .menu{
+        left: 5px;
+        transition: all 0.5s;
+    }
+    header:not(:hover) .menu{
+        left: -1000px;
+        transition: all 0.8s;
+        transition-delay: 2s;
+    }
+    .conteiner1{
+        flex-direction: column;
+        align-items: center;
+    }
+    section h1{
+        font: normal normal 2em var(--font_p2);
+    }
+    section p{
+        font: normal normal 1em var(--font_g);
+    }
+    section nav{
+        padding-left: auto 0px;
+        width: 400px;
+        height: 300px;
+        display: initial;
+        overflow-y: scroll;
+        border-radius: 10px;
+        margin: inherit -20px;
+    }
+    section a{
+        display: block;
+        font: normal normal 1.6em var(--font_p1);
+        height: 200px;
+        width: 300px;
+        margin: 1rem auto;
+
+    }
+    section nav::-webkit-scrollbar{
+        background-color: var(--cor1);
+        width: 10px;
+        padding: 2px 0px;
+        border-radius: 10px;
+    }
+    section nav::-webkit-scrollbar-track{
+        background-color: var(--cor1);
+        width: 10px;
+        padding: 2px 0px;
+        border-radius: 10px;
+    }
+    section nav::-webkit-scrollbar-thumb{
+        background-color: var(--cor4);
+        border: 2px solid var(--cor1);
+        border-radius: 10px;
+    }
+    main > section{
+        max-width: 800px;
+        background-color: transparent;
+        display: flex;
+    }
+    .p_normal,.p_pro{
+        margin: 10px auto;
+    }
+    footer p{
+        font-size: 0.8em;
+        margin: 10px;
+        text-align: center;
+    }
+}
+@media (max-width:450px){
+    section nav{
+        width: 280px;
+        height: 200px;
+    }
+    section a{
+        display: block;
+        font: normal normal 1.2em var(--font_p1);
+        height: 100px;
+        width: 200px;
+
+    }
+}
+
+@media (max-width: 420px){
+    header{
+        height: 40px;
+    }
+    header > img{
+        height: 30px;
+    }
+    header > span > input{
+        font: normal normal 0.5em var(--font_p1);
+    }
+    .buscar{
+        margin-right: 20px;
+    }
+    header > nav{
+        top: 50px;
+    }
+    header > nav > a{
+        font: normal normal 0.6em var(--font_p1);
+    }
+}
