@@ -67,16 +67,20 @@
     --font_p1: 'Fredoka One', cursive;
     --font_p2: 'Monoton', cursive;
 
-    --cor1: #F7F9F7;
-    --cor2: #DBF9F0;
-    --cor3: #B3DEC1;
-    --cor4: #750D37;
-    --cor5: #210124;
+    --cor1: #f5dc63;
+    --cor2: #e1d183;
+    --cor3: #c5ad4f;
+    --cor4: #090712;
+    --cor5: #070707;
 
 }
 
 *{
     margin: 0px;
+}
+
+img{
+    border-radius: 10px;
 }
 
 header{
@@ -91,7 +95,7 @@ header{
     z-index: 2;
 }
 header > img{
-    max-width: 100px;
+    max-width: 60px;
     margin-left: 5%;
     
 }
