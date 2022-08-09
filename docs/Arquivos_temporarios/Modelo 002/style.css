@@ -62,6 +62,64 @@
     }
 }
 
+@keyframes des_sublinhado {
+    100%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 45%, var(--cor5)45%, var(--cor5) 55%, var(--cor1)55%);
+    }
+    90%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 40%, var(--cor5)40%, var(--cor5) 60%, var(--cor1)60%);
+    }
+    80%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 35%, var(--cor5)35%, var(--cor5) 65%, var(--cor1)65%);
+    }
+    70%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 30%, var(--cor5)30%, var(--cor5) 70%, var(--cor1)70%);
+    }
+    60%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 25%, var(--cor5)25%, var(--cor5) 75%, var(--cor1)75%);
+    }
+    50%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 20%, var(--cor5)20%, var(--cor5) 80%, var(--cor1)80%);
+    }
+    40%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 15%, var(--cor5)15%, var(--cor5) 85%, var(--cor1)85%);
+    }
+    30%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 10%, var(--cor5)10%, var(--cor5) 90%, var(--cor1)90%);
+    }
+    20%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 5%, var(--cor5)5%, var(--cor5) 95%, var(--cor1)95%);
+    }
+    10%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 2%, var(--cor5)2%, var(--cor5) 98%, var(--cor1)98%);
+    }
+    0%{
+        padding-bottom: 3px;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, var(--cor1) 0%, var(--cor5)0%, var(--cor5) 100%, var(--cor1)100%);
+    }
+}
+
 :root{
     --font_g: 'M PLUS Rounded 1c', sans-serif;
     --font_p1: 'Fredoka One', cursive;
@@ -142,6 +200,10 @@ header > nav > a:hover{
     animation: sublinhado 0.2s;
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
+}
+header > nav > a:not(:hover){
+    animation: des_sublinhado 0.2s;
+    animation-delay: 0.1s;
 }
 header > nav > a > span:active{
     transition: all 0.3s;
@@ -306,10 +368,13 @@ footer{
     height: 100px;
     padding: 10px;
 }
+footer p{
+    line-height: 23px;
+}
 footer nav{
     display: flex;
     flex-direction: column;
-    max-width: 80px;
+    max-width: auto;
     margin: 10px;
 }
 footer img{
@@ -318,6 +383,7 @@ footer img{
 }
 
 footer a{
+    width: fit-content;
     color: var(--cor4);
     text-decoration: none;
     font: normal bold 1em var(--font_g);
@@ -327,6 +393,10 @@ footer a:hover{
     animation: sublinhado 0.2s;
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
+}
+footer a:not(:hover){
+    animation: des_sublinhado 0.2s;
+    animation-delay: 0.1s;
 }
 footer span{
     width: 100%;
