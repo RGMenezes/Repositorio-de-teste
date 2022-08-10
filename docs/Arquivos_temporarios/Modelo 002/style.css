@@ -293,7 +293,7 @@ section a{
 section a img{
     display: block;
     margin: auto;
-    max-width: 100%;
+    max-width: 100px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
