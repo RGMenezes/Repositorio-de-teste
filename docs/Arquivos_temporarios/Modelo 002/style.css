@@ -294,7 +294,6 @@ section a img{
     display: block;
     margin: auto;
     max-width: 100%;
-    max-height: 100%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -536,6 +535,10 @@ footer span:active{
         width: 200px;
 
     }
+    section a img{
+    max-width: 70%;
+    }
+
 }
 
 @media (max-width: 420px){
@@ -556,5 +559,8 @@ footer span:active{
     }
     header > nav > a{
         font: normal normal 0.6em var(--font_p1);
+    }
+    section a img{
+    max-width: 50%;
     }
 }
