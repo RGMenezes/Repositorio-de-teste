@@ -536,7 +536,7 @@ footer span:active{
 
     }
     section a img{
-    width: 70%;
+    width: 70px;
     }
 
 }
@@ -561,6 +561,6 @@ footer span:active{
         font: normal normal 0.6em var(--font_p1);
     }
     section a img{
-    width: 50%;
+    width: 50px;
     }
 }
