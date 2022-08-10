@@ -181,6 +181,28 @@ header > span > input:active{
     transition: all 0.1s;
     transform: scale(1.1);
 }
+header ol{
+    position: absolute;
+    background-color: var(--cor4);
+    border-radius: 10px;
+    color: var(--cor3);
+    display: list-item;
+    transition: all 0.5s;
+    display: none;
+
+}
+header li{
+    font: normal normal 0.8em var(--font_g);
+    margin: 5px 5px 5px -10px;
+}
+header > span > ol > li > a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+header > span > ol > li > a:hover{
+    transition: all 0.5s;
+    font-family: var(--font_p1);
+}
 header > nav{
     margin-right: 5%;
 }
@@ -316,13 +338,14 @@ main > section{
     max-width: 800px;
     background-color: transparent;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 300px 300px 300px;
     justify-content: space-around;
     align-content: space-around;
     justify-items: center;
 }
 
 main > section > aside{
+    margin: 10px;
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.336);
@@ -342,13 +365,23 @@ main > section > aside > ul{
     margin: 8px 0px;
 }
 
-.p_pro{
-    background-color: var(--cor5);
+.p_vip{
+    background-color: var(--cor4);
 }
-.p_pro > ul, h1{
+.p_vip > ul, h1{
     color: var(--cor3);
 }
-.p_pro li{
+.p_vip li{
+    margin: 8px 0px;
+}
+
+.p_gold{
+    background-color: var(--cor5);
+}
+.p_gold > ul, h1{
+    color: var(--cor1);
+}
+.p_gold li{
     margin: 8px 0px;
 }
 
@@ -430,6 +463,16 @@ footer span:active{
         grid-template-rows: 200px 200px 200px;
     }
 }
+@media (max-width: 1000px){
+    main > section{
+        max-width: 800px;
+        background-color: transparent;
+        display: flex;
+    }
+    .p_normal,.p_gold,.p_vip{
+        margin: 10px auto;
+    }
+}
 
 @media (max-width: 800px){
     header > img{
@@ -509,14 +552,6 @@ footer span:active{
         border: 2px solid var(--cor1);
         border-radius: 10px;
     }
-    main > section{
-        max-width: 800px;
-        background-color: transparent;
-        display: flex;
-    }
-    .p_normal,.p_pro{
-        margin: 10px auto;
-    }
     footer p{
         font-size: 0.8em;
         margin: 10px;
@@ -559,8 +594,5 @@ footer span:active{
     }
     header > nav > a{
         font: normal normal 0.6em var(--font_p1);
-    }
-    section a img{
-    width: 50px;
     }
 }

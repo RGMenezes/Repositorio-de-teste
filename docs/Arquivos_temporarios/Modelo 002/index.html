@@ -12,8 +12,19 @@
     <header>
         <img src="imagens/logo.jpg" alt="logo marca">
         <span>
-            <input placeholder="Pesquisar" type="search" name="pesquisa" id="pesquisa">
-            <input type="button" value="Buscar" class="buscar">
+            <input placeholder="Pesquisar" type="search" name="pesquisa" id="pesquisa" onkeyup="itens_de_pesquisa()">
+            <input type="button" value="Buscar" class="buscar" onclick="pesquisar()">
+            <ol id="lista_p">
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_ingressos.html">Ingressos</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_circuto.html">Circuito</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_equipes.html">Equipes</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_pilotos.html">Pilotos</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_marcas.html">Marcas</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_shopping.html">Shopping</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_caixa.html">Caixa</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_logica.html">Lógica</a></li>
+                <li class="itens"><a hreflang="pt-br" rel="next" href="pag_dados.html">Dados+</a></li>
+            </ol>
         </span>
         <nav class="menu">
             <a hreflang="pt-br" rel="next" href="pag_ingressos.html"><span>Ingressos</span></a>
@@ -64,15 +75,15 @@
         <section>
             <aside class="p_normal">
                 <h1>Padrão</h1>
-                <ul type="circle">
+                <ul type="disk">
                     <li>Assisir aos shows.</li>
                     <li>Assistir as corridas.</li>
                     <li>Acesso a área normal de visualização da corrida.</li>
                     <li>Ingresso individual.</li>
                 </ul>
             </aside>
-            <aside class="p_pro">
-                <h1>black</h1>
+            <aside class="p_vip">
+                <h1>Vip</h1>
                 <ul type="disk">
                     <li>Assisir aos shows.</li>
                     <li>Assistir as corridas.</li>
@@ -81,6 +92,23 @@
                     <li>visualização privilegiada da corrida.</li>
                     <li>Posição sonora privilegiada.</li>
                     <li>Autografo de piloto ou artista.</li>
+                    <li>Ingresso individual.</li>
+                </ul>
+            </aside>
+            <aside class="p_gold">
+                <h1>Gold</h1>
+                <ul type="disk">
+                    <li>Assisir aos shows.</li>
+                    <li>Assistir as corridas.</li>
+                    <li>Acesso a área normal de visualização da corrida.</li>
+                    <li>Acesso as arquibancadas.</li>
+                    <li>visualização privilegiada da corrida.</li>
+                    <li>Posição sonora privilegiada.</li>
+                    <li>Autografo de piloto ou artista.</li>
+                    <li>Acesso a arquibancada gold.</li>
+                    <li>Visita aos boxes.</li>
+                    <li>Visualização privilegiada dos shows.</li>
+                    <li>Direito a uma volta rápida.</li>
                     <li>Ingresso individual.</li>
                 </ul>
             </aside>
@@ -106,5 +134,7 @@
 
         <img src="imagens/logo.jpg" alt="logo marca">
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
