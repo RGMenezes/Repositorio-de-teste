@@ -210,6 +210,14 @@ header > nav > a > span:active{
     color: var(--cor3);
 }
 
+.conteiner1 a{
+    color: var(--cor4);
+}
+.conteiner1 a:hover{
+    transition: all 0.5s ease;
+    border-radius: 3px;
+    background-color: var(--cor2);
+}
 .conteiner1 {
     padding-top: 100px;
     display: flex;
@@ -282,6 +290,14 @@ section a{
     border-radius: 10px;
     border: 3px solid var(--cor4);
 }
+section a img{
+    display: block;
+    margin: auto;
+    width: max-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 section a:hover{
     transition: all 0.5s;
     transform: scale(1.1);
@@ -313,7 +329,7 @@ main > section > aside{
     padding: 0px 0px 50px 0px; 
 }
 main > section > aside > ul{
-    font: normal normal 0.9em var(--font_g);
+    font: normal normal 1em var(--font_g);
 }
 
 .p_normal{
