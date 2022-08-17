@@ -344,6 +344,15 @@ main > section{
     justify-items: center;
 }
 
+main > p > a{
+    color: var(--cor4);
+}
+main > p > a:hover{
+    transition: all 0.5s ease;
+    border-radius: 3px;
+    background-color: var(--cor2);
+}
+
 main > section > aside{
     margin: 10px;
     max-width: 300px;
@@ -352,7 +361,7 @@ main > section > aside{
     padding: 0px 0px 50px 0px; 
 }
 main > section > aside > ul{
-    font: normal normal 1em var(--font_g);
+    font: normal normal 1.2em var(--font_g);
 }
 
 .p_normal{
