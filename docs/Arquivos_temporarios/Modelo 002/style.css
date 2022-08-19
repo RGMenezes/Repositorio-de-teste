@@ -647,3 +647,49 @@ footer span:active{
 }
 
 
+/*pag dos ingressos*/
+body > .ingressos{
+    max-width: 900px;
+    margin: auto;
+}
+
+body > div aside{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 100px 0px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.384);
+}
+body > div aside:hover{
+    transition: all 0.2s;
+    transform: scale(1.05);
+}
+body > div aside:not(:hover){
+    transition: all 0.2s;
+    transform: scale(1.0);
+}
+body > div aside:active{
+    opacity: 0.8;
+}
+body > div aside ol{
+    font: normal normal 1em var(--font_g);
+}
+body > div > span{
+    position: sticky;
+    bottom: 0%;
+    font: normal normal 1.2em var(--font_p1);
+    color: red;
+}
+.especial{
+    color: var(--cor1);
+    background-color: var(--cor4);
+}
+.especial h1{
+    color: var(--cor1);
+}
+
+.gold, .vip{
+    background-color: var(--cor3);
+}
+.padrao{
+    background-color: var(--cor2);
+}

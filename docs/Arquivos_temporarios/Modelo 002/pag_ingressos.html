@@ -38,10 +38,12 @@
     <div style="height: 70px;"></div>
 
 
-    <main>
-        <section>
+    
+    <div class="ingressos">
+        <h1>Escolha os seus ingressos abaixo</h1>
+        <aside class="especial">
             <h1>Especial</h1>
-            <h2>Disponíveis (<span></span>/<span>500</span>)</h2>
+            <h2>Disponíveis (<span id="especial">0</span>/<span>500</span>)</h2>
             <p>Acesso a arquibancada mais desejada da corrida! De frente pro palco e com acesso limitado, você ganhará um aotografo e poderá tirar uma foto do seu piloto ou artista favorito, além de poder ficar no camarote dos shows.</p>
             <ol>
                 <li>Arquibancada A</li>
@@ -51,17 +53,42 @@
                 <li>Foto</li>
             </ol>
             <p>Compre agora por <strong>700,00 R$</strong>!</p>
-        </section>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
-    </main>
+        </aside>
+        <aside class="gold">
+            <h1>Gold</h1>
+            <h2>Disponíveis (<span id="gold">0</span>/<span>4500</span>)</h2>
+            <p>Acesso a uma arquibancada bem localizada para assistir a corrida e ouvir os shows.</p>
+            <ol>
+                <li>Arquibancada B</li>
+                <li>Corridas</li>
+                <li>Eventos completos</li>
+            </ol>
+            <p>Compre agora por <strong>250,00 R$</strong>!</p>
+        </aside>
+        <aside class="vip">
+            <h1>Vip</h1>
+            <h2>Disponíveis (<span id="vip">0</span>/<span>5000</span>)</h2>
+            <p>Acesso a arquibancada perfeita para assistir a corrida.</p>
+            <ol>
+                <li>Arquibancada C</li>
+                <li>Corridas</li>
+                <li>Eventos Completos</li>
+            </ol>
+            <p>Compre agora por <strong>200,00 R$</strong>!</p>
+        </aside>
+        <aside class="padrao">
+            <h1>Padrão</h1>
+            <h2>Disponíveis (<span id="padrao">0</span>/<span>20000</span>)</h2>
+            <p>Assista a corrida de verdadeira forma raiz.</p>
+            <ol>
+                <li>Ao lado da pista</li>
+                <li>Corridas</li>
+                <li>eventos completos</li>
+            </ol>
+            <p>Compre agora por <strong>80,00 R$</strong>!</p>
+        </aside>
+        <span id="crono"></span>
+    </div>
 
     
     <footer>
@@ -76,5 +103,67 @@
         <img src="imagens/logo.jpg" alt="logo marca">
     </footer>
     <script src="script.js"></script>
+    <script>
+        var crono = document.getElementById('crono')
+        var especial = document.getElementById('especial')
+        var gold = document.getElementById('gold')
+        var vip = document.getElementById('vip')
+        var padrao = document.getElementById('padrao')
+        var segundo = 40
+        var minuto = 59
+        var hora = 239
+        var e = 97
+        var g = 1939
+        var v = 2397
+        var p = 10072
+        especial.innerHTML = `${e}`
+        gold.innerHTML = `${g}`
+        vip.innerHTML = `${v}`
+        padrao.innerHTML = `${p}`
+        var tempo = setInterval(cronometro, 1000)
+        function cronometro(){
+            var ale = Math.floor(100*Math.random())
+            segundo = segundo - 1
+            minuto = minuto
+            hora = hora
+            e=e
+            g=g
+            v=v
+            p=p
+            
+            if(ale <= 5){
+                e = e+1
+                especial.innerHTML = `${e}`
+            }
+            if(ale <= 30){
+                g = g+1
+                gold.innerHTML = `${g}`
+            }
+            if(ale <= 40){
+                v = v+1
+                vip.innerHTML = `${v}`
+            }
+            if(ale <= 90){
+                p = p+1
+                padrao.innerHTML = `${p}`
+            }
+
+            if(hora <= 0 && minuto <= 1 && segundo <= 1){
+                crono.innerHTML=`0:0:0`
+            }else{
+                crono.innerHTML=`${hora}:${minuto}:${segundo}`
+
+                if(segundo == 0){
+                    segundo = 60
+                    minuto = minuto -1
+                }
+                if(minuto == 0){
+                    minuto = 60
+                    hora = hora -1
+                }
+                
+            }
+        }
+    </script>
 </body>
 </html>
