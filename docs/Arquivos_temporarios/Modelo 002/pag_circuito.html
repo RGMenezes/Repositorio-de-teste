@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boulevard Race/Circuito</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        main img {
+            max-width: 100%;
+        }
+        #linha_l{
+            color: white;
+            background-image: linear-gradient(to right, black 45%, #EC2724 55%);
+            width: fit-content;
+            padding-right: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,7 +50,28 @@
 
 
     <main>
-        <h1></h1>
+        <h1>Mapa do evento</h1>
+        <div>
+            <h3 style="color: #02A8F3;">Arquibancadas:</h3>
+            <p> A = ao lado da linha de largada e de frente pro palco.
+                <br> B = em frente a reta principal ou final do setor 1.
+                <br> C = em frente ou setor 3 ou em frente a reta do setor 2.
+            </p>
+            <h3 style="color: #454DC7;">Visão de pista</h3>
+            <p>Área destinada ao ingresso padrão.</p>
+            <h3 style="color: #B83DBA;">Palco</h3>
+            <h3 style="color: #EC2724;">Boxes</h3>
+            <img style="margin-bottom: 200px;" src="imagens/circuito/Circuito.png" alt="mapa do circuito">
+        </div>
+        <h1>Mapa do circuito</h1>
+        <div>
+            <h3 style="color: #000000;">Setor 1</h3>
+            <h3 style="color: #00FBE5;">Setor 2</h3>
+            <h3 style="color: #EC2724;">Setor 3</h3>
+            <h3 id="linha_l">Linha de largada</h3>
+            <p>Junção do setor 3 com o 1</p>
+            <img src="imagens/circuito/traçado do circuito.png" alt="traçado da pista">
+        </div>
     </main>
 
     
