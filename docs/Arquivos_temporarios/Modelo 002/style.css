@@ -693,3 +693,25 @@ body > div > span{
 .padrao{
     background-color: var(--cor2);
 }
+
+
+/*pag caixa*/
+table{
+    border: 3px solid var(--cor4);
+    border-radius: 10px;
+    background-color: var(--cor4);
+    margin: 10px auto 50px auto;
+    width: 100%;
+}
+th{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    font: normal normal 1.4em var(--font_p1);
+    padding: 3px;
+}
+td{
+    background-color: white;
+    font: normal normal 1em var(--font_g);
+    padding: 2px;
+    text-indent: 5px;
+}
