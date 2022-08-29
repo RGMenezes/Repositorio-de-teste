@@ -326,7 +326,7 @@ section a:hover{
 }
 section a:active{
     transition: all 0.5s;
-    transform: scale(3.0);
+    transform: scale(0.9);
 }
 
 main{
