@@ -469,6 +469,7 @@ footer span:active{
     position: fixed;
     bottom: 50%;
     left: 10px;
+    z-index: 1;
 }
 .voltar a{
     background-color: var(--cor5);
@@ -596,7 +597,8 @@ footer span:active{
         text-align: center;
     }
     .voltar{
-        bottom: 150px;
+        position: fixed;
+        bottom: 120px;
     }
     .voltar a{
         font-size: 0.8em;
