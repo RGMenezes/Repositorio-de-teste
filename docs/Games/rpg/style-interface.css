@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+
+}
+
+:root{
+    --cor-1:#392759;
+    --cor-2:#092327;
+    --cor-3:#776D5A;
+    --cor-4:#F63E02;
+    --cor-5:#0094C6;
+    --cor-6:black;
+    --cor-7:white;
+
+
+}
+
+body{
+    background-color: var(--cor-6);
+    position: relative;
+    color: var(--cor-7);
+}
+
+div#tela{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: var(--cor-2);
+    width: 95vw;
+    height: 95vh;
+    translate: -50% -50%;
+    border-radius: 10px;
+    border: 3px solid var(--cor-1);
+}
+
+div#player{
+    position: absolute;
+    background-color: var(--cor-4);
+    width: 2vw;
+    height: 4vh;
+    border-radius: 3px;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+}
+
+input#jogar{
+    background-color: var(--cor-2);
+    border: 1px solid var(--cor-7);
+    color: var(--cor-7);
+    position: fixed;
+    z-index: 1;
+    translate: -50% -50%;
+    top: 4%;
+    left: 50%;
+}
+input#jogar:focus{
+    opacity: 0.2;
+    
+}
+input#jogar:not(:focus){
+    opacity: 1;
+}
