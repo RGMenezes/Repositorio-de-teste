@@ -88,8 +88,8 @@ div.inimigo1{
     height: 4vh;
     border-radius: 0.5vw;
     translate: -50% -50%;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 10%;
 }
 
 input#jogar{
