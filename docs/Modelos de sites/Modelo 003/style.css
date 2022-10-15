@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root{
+    --cor1: #26FC83;
+    --cor2: #850162;
+    --cor3: #B00E00;
+    --cor4: #006CBE;
+    --cor-letra: black;
+    --cor-bk: white;
+
+    --font-geral: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-t: 'Bebas Neue', cursiva;
+    --font-st: 'Fredoka One', cursive;
+}
+
+*{
+    font-family: var(--font-geral);
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font: normal normal 3em var(--font-t);
+}
+h2{
+    font: normal normal 1.5em var(--font-st);
+}
+a{
+    font: normal normal 1em var(--font-st);
+    text-decoration: none;
+    color: var(--cor2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+}
+a:hover{
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+strong{
+    color: var(--cor2);
+}
+body{
+    position: relative;
+}
+button{
+    background-color: var(--cor-bk);
+    border: 2px solid var(--cor2);
+    border-radius: 4px;
+    padding: 3px;
+    font: normal normal 0.9em var(--font-geral);
+}
+
+
+
+header{
+    background-color: var(--cor-bk);
+    border-bottom: 3px solid var(--cor2);
+    text-align: center;
+    padding: 10px;
+}
+header h1{
+    font-size: 4em;
+    color: var(--cor2);
+}
+header p{
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: var(--cor-bk);
+    border-bottom: 3px solid var(--cor2);
+    padding: 3px;
+}
+.main nav{
+    display: block;
+    margin: auto;
+}
+.main > div{
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+button#conteudo_e{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    translate: 0% -50%;
+}
+button#conteudo_d{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    translate: 0% -50%;
+}
+
+
+
