@@ -4,16 +4,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 :root{
-    --cor1: #26FC83;
-    --cor2: #850162;
-    --cor3: #B00E00;
-    --cor4: #006CBE;
+    --cor1: #BAFF29;
+    --cor2: #1A1B41;
+    --cor3: #c2e7da;
+    --cor4: #6290c3;
     --cor-letra: black;
-    --cor-bk: white;
+    --cor-bk: rgb(255, 255, 255);
 
     --font-geral: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-t: 'Bebas Neue', cursiva;
     --font-st: 'Fredoka One', cursive;
+}
+body{
+    --cor1: #BAFF29;
+    --cor2: #1A1B41;
+    --cor3: #c2e7da;
+    --cor4: #6290c3;
+    --cor-letra: black;
+    --cor-bk: rgb(255, 255, 255);
+
+    background-color: var(--cor-bk);
+    position: relative;
 }
 
 *{
@@ -23,32 +34,54 @@
 }
 h1{
     font: normal normal 3em var(--font-t);
+    color: var(--cor-letra);
 }
 h2{
     font: normal normal 1.5em var(--font-st);
+    color: var(--cor-letra);
+    margin-top: 20px;
+}
+p{
+    color: var(--cor-letra);
 }
 a{
     font: normal normal 1em var(--font-st);
     text-decoration: none;
     color: var(--cor2);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
 }
 a:hover{
-    opacity: 0.8;
+    color: var(--cor4);
     transition: all 0.5s ease;
+}
+a:active{
+    transition: all 0.1s ease-in-out;
+    text-shadow: 1px 1px 1px var(--cor-letra);
 }
 strong{
     color: var(--cor2);
 }
-body{
-    position: relative;
-}
 button{
-    background-color: var(--cor-bk);
-    border: 2px solid var(--cor2);
-    border-radius: 4px;
-    padding: 3px;
+    background-color: var(--cor3);
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 3px 10px;
     font: normal normal 0.9em var(--font-geral);
+    cursor: pointer;
+}
+button:hover{
+    transition: border 0.5s ease-in-out;
+    border: 2px solid var(--cor4);
+}
+button:not(:hover){
+    transition: border 0.6s ease-in-out;
+    border: 2px solid transparent;
+}
+section{
+    margin: 50px auto;
+    width: 800px;
+    padding: 15px;
+    background-color: var(--cor-bk);
+    border-radius: 20px;
 }
 
 
@@ -60,6 +93,7 @@ header{
     padding: 10px;
 }
 header h1{
+    margin: 0px;
     font-size: 4em;
     color: var(--cor2);
 }
@@ -76,16 +110,44 @@ header p{
     border-bottom: 3px solid var(--cor2);
     padding: 3px;
 }
-.main nav{
-    display: block;
-    margin: auto;
+.menu nav{
+    padding-bottom: 10px;
 }
-.main > div{
+.menu a{
+    padding: 0px 1vw;
+}
+.menu a:hover{
+    border-left: 1px solid var(--cor-letra);
+    border-right: 1px solid var(--cor-letra);
+}
+.menu span{
+    background-color: var(--cor-letra);
+    margin: auto;
+    display: block;
     width: fit-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+    height: 10px;
+    border-radius: 100px ;
+    padding: 2px;
+}
+.menu > div > span > button{
+    display: block;
+    border: none;
+    padding: none;
+    height: 70%;
+}
+.menu > div > span > button:hover{
+    height: 90%;
+    transition: all 0.2s ease-in-out;
+}
+.menu > div > span > button:not(:hover){
+    height: 70%;
+    transition: all 0.2s ease-in-out;
+}
+.menu > div > span > button:active{
+    background-color: var(--cor-letra);
+}
+.menu > div{
+    text-align: center;
 }
 button#conteudo_e{
     position: absolute;
@@ -100,5 +162,8 @@ button#conteudo_d{
     translate: 0% -50%;
 }
 
-
-
+.c_principal{
+    position: absolute;
+    translate: -50% -50%;
+    right: 0%;
+}
