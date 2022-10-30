@@ -83,6 +83,24 @@ section{
     background-color: var(--cor-bk);
     border-radius: 20px;
 }
+footer{
+    position: sticky;
+    bottom: 0%;
+    padding-bottom: 4px;
+    text-align: center;
+    border-top: 3px solid var(--cor2);
+    background-color: var(--cor-bk);
+}
+#iframe{
+    height: 70vh;
+    width: 98vw;
+    margin: auto;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 
 
@@ -91,6 +109,7 @@ header{
     border-bottom: 3px solid var(--cor2);
     text-align: center;
     padding: 10px;
+    
 }
 header h1{
     margin: 0px;
@@ -160,10 +179,4 @@ button#conteudo_d{
     top: 50%;
     right: 0%;
     translate: 0% -50%;
-}
-
-.c_principal{
-    position: absolute;
-    translate: -50% -50%;
-    right: 0%;
 }

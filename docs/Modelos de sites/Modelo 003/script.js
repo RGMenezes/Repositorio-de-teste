@@ -29,3 +29,20 @@ function tema(){
         document.body.style.setProperty('--cor-bk', 'black')
     }
 }
+
+
+//colocar conteúdo
+var iframe = document.getElementById('conteudo')
+
+function proximo_c(){
+    var frame = window.frameElement
+    if(frame){
+        if(iframe != "pag_plus.html")
+    }
+    iframe.src = "pag_plus.html"
+    alert('direita')
+}
+function voltar_c(){
+    iframe.src = "pag_extra.html"
+    alert('esquerda')
+}
