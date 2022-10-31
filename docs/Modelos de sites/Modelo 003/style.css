@@ -27,6 +27,18 @@ body{
     position: relative;
 }
 
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-track{
+    background: var(--cor2);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--cor3);
+    border: 2px solid var(--cor2);
+    border-radius: 10px;
+}
+
 *{
     font-family: var(--font-geral);
     margin: 0px;
@@ -43,6 +55,7 @@ h2{
 }
 p{
     color: var(--cor-letra);
+    text-align: justify;
 }
 a{
     font: normal normal 1em var(--font-st);
@@ -78,7 +91,7 @@ button:not(:hover){
 }
 section{
     margin: 50px auto;
-    width: 800px;
+    max-width: 800px;
     padding: 15px;
     background-color: var(--cor-bk);
     border-radius: 20px;
@@ -91,9 +104,13 @@ footer{
     border-top: 3px solid var(--cor2);
     background-color: var(--cor-bk);
 }
+footer p{
+    text-align: center;
+}
+
 #iframe{
     height: 70vh;
-    width: 98vw;
+    max-width: 98vw;
     margin: auto;
 }
 iframe{
@@ -117,6 +134,7 @@ header h1{
     color: var(--cor2);
 }
 header p{
+    text-align: center;
     margin-top: -15px;
     margin-bottom: 10px;
 }
@@ -163,7 +181,7 @@ header p{
     transition: all 0.2s ease-in-out;
 }
 .menu > div > span > button:active{
-    background-color: var(--cor-letra);
+    background-color: var(--cor1);
 }
 .menu > div{
     text-align: center;
@@ -179,4 +197,59 @@ button#conteudo_d{
     top: 50%;
     right: 0%;
     translate: 0% -50%;
+}
+
+
+#c_extra{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#c_extra aside{
+    margin: 20px;
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+}
+
+@media (max-width: 800px) {
+    #c_extra{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 550px) {
+    button#conteudo_d{
+        top: 150%;
+        right: 10px;
+    }
+    button#conteudo_e{
+        top: 150%;
+        left: 10px;
+    }
+    #c_extra{
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    a{
+        font-size: 0.9em;
+    }
+
+    header h1{
+        font-size: 3em;
+    }
+    .menu a{
+        padding: 0px 2vw;
+    }
 }
