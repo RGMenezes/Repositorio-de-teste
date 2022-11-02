@@ -5,21 +5,24 @@
 
 :root{
     --font-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-titulo: 'Raleway', sans-serif;
-    --font-subtitulo:  'Kanit', sans-serif;
+    --font-titulo: 'Kanit', sans-serif;
+    --font-subtitulo:  'Raleway', sans-serif;
     --cor1: #D0DB97;
-    --cor2: #69B578;
-    --cor3: #3A7D44;
-    --cor4: #254D32;
+    --cor2: #f0ec57;
+    --cor3: #ff220c;
+    --cor4: #129490;
     --cor5: #181D27;
+    --cor-letra: white;
 }
 
 ::-webkit-scrollbar{
     background: var(--cor5);
     width: 8px;
+    height: 8px;
+    border-radius: 50px;
 }
-::-webkit-scrollbar-track{
-    background-color: var(--cor2);
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor4);
     border: 2px solid var(--cor5);
     border-radius: 50px;
 }
@@ -29,74 +32,246 @@
     padding: 0px;
 }
 
-
 h1{
-    font: normal normal 3em var(--font-titulo);
-    text-align: center;
-    margin: 30px 0px 10px 0px;
+    font: normal normal 4em var(--font-titulo);
 }
 h2{
-    font: normal normal 2em var(--font-subtitulo);
-    margin: 20px 0px 5px 0px;
+    font: bold normal 1.8em var(--font-subtitulo);
 }
 p{
-    font: normal normal 1em var(--font-principal);
-    text-indent: 10px;
+    font: normal normal 1.3em var(--font-principal);
+    line-height: 35px;
 }
-
+a{
+    font: normal normal 1em var(--font-titulo);
+    text-decoration: none;
+    color: var(--cor4);
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+    transition: all 0.2s ease-in-out;
+}
+a:active{
+    color: var(--cor2);
+}
 
 header{
-    position: fixed;
-    background-color: red;
-}
-nav{
+    position: sticky;
+    top: 0px;
+    margin-bottom: 40px;
     display: grid;
-}
-
-main{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 90%;
-}
-
-div#conteudo{
-    margin: 0px 20px;
-}
-
-section#imagens_principais{
+    grid-template-columns: 30% 65%;
+    align-items: center;
     background-color: var(--cor5);
+    border-bottom: 3px solid var(--cor3);
+
+}
+header h1{
+    font-size: 2em;
+    margin-left: 20px;
+    color: var(--cor3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
+}
+header nav{
+    align-items: center;
+    justify-items: end;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+header a{
+    display: block;
+    margin: 0px 1vw;
+    padding: 3px 6px;
+    width: fit-content;
+    font: bold normal 1em var(--font-subtitulo);
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: var(--cor3);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black;
 }
 
-section#conteudo_principal{
-    padding: 30px;
+header a:hover{
+    background-color: var(--cor4);
+    transform: translate(0%, 10%);
+    box-shadow: 1px 1px 1px black;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+}
+header a:active{
+    background-color: var(--cor2);
+    color: var(--cor5);
 }
 
-img{
-    width: 100%;
+.posicao_duas_colunas{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 60vh;
 }
 
-article#artigos{
+#imagem{
+    margin: 0px 20px;
+    background-color: #181d2700;
+    background-image: url(imagem/banner-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transition: all 1s ease-in-out;
+}
+
+article{
     overflow: auto;
-    background-color: var(--cor5);
     margin: 0px 20px;
 }
-article#artigos aside{
-    margin: 5px;
-    margin-bottom: 20px;
-    padding: 10px;
-    padding-bottom: 40px;
-    color: var(--cor1);
-    border-bottom: 1px solid white;
+article aside{
+    margin: 0px 5px 20px 0px;
+    padding: 0px 15px 10px 15px;
+    background-color: var(--cor5);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
 }
-article#artigos p{
-    text-align: right;
-    font: normal lighter 0.9em var(--font-principal);
+
+article > aside h1{
+    font: bold normal 2em var(--font-titulo);
+    padding-top: 10px;
+    color: var(--cor3);
 }
-article#artigos h1{
+article > aside p{
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 30px;
+    color: var(--cor-letra);
+}
+
+.texto{
+    margin: 40px;
+    padding: 10px 50px;
+}
+.texto h2{
+    padding-top: 10px;
+}
+.texto p{
     padding-top: 0px;
-    margin-top: 0px;
-    text-align: right;
-    color: var(--cor2);
-    font: normal bold 1.5em var(--font-titulo);
+    padding-bottom: 30px;
+}
+
+.extra{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    align-items: center;
+    justify-items: left;
+    column-gap: 50px;
+    margin: 10px 100px;
+    height: 120px;
+    overflow: auto;
+}
+.extra aside{
+    height: 100;
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 10px;
+    background-color: var(--cor1);
+    border-radius: 5px;
+}
+.extra img{
+    height: 90px;
+    border-radius: 5px;
+}
+.extra p{
+    font: lighter normal 1em var(--font-principal);
+    padding: 5px;
+}
+
+footer{
+    border-top: 2px solid var(--cor4);
+    height: 40px;
+    margin-top: 30px;
+}
+footer p{
+    font: 400 normal 1em var(--font-titulo);
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    header a{
+        font-size: 0.6em;
+    }
+    .posicao_duas_colunas{
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        row-gap: 20px;
+        height: 120vh;
+    }
+    article aside h1{
+        font-size: 1.3em;
+    }
+    article aside p{
+        font-size: 0.9em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+    p{
+        font-size: 1em;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--cor4);
+        border: 2px solid var(--cor5);
+        border-radius: 50px;
+    }
+
+    header{
+        display: block;
+        top: -48px;
+    }
+    header nav{
+        position: absolute;
+        top: 55px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    header h1{
+        text-align: center;
+    }
+
+    .posicao_duas_colunas{
+        grid-template-rows: 40% 60%;
+    }
+    #imagem{
+        margin: 0px;
+    }
+    .texto{
+        margin: 40px 0px;
+        padding: 10px 10px; 
+    }
+    .extra{
+        margin: 10px;
+        height: 100px;
+    }
+    .extra aside{
+        height: 80px;
+    }
+    .extra img{
+        height: 80px;
+    }
+    .extra p{
+        font-size: 0.8em;
+    }
+
+    footer p{
+        font-size: 0.7em;
+    }
 }
