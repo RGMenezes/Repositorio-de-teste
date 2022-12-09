@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 005</title>
+    <link rel="stylesheet" href="styles/smart-screen.css" media="all">
+    <link rel="stylesheet" href="styles/others-screen.css"  media="screen and (min-width: 481px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body >
+    <header>
+        <h1>Marca</h1>
+        <div class="material-symbols-outlined header-menu">menu</div>
+        <nav>
+            <a href="#">pag1</a>
+            <a href="#">pag2</a>
+            <a href="#">pag3</a>
+            <a href="#">pag4</a>
+        </nav>
+        <div class="header-progress">
+            <div class="header-progress-bar"></div>
+        </div>
+    </header>
+
+    <section class="section-tools">
+        <aside>
+            <div class="material-symbols-outlined">image</div>
+            <h2>subtítulo</h2>
+        </aside>
+
+        <aside>
+            <div class="material-symbols-outlined">image</div>
+            <h2>subtítulo</h2>
+        </aside>
+
+        <aside>
+            <div class="material-symbols-outlined">image</div>
+            <h2>subtítulo</h2>
+        </aside>
+
+        <aside>
+            <div class="material-symbols-outlined">image</div>
+            <h2>subtítulo</h2>    
+        </aside>
+
+        <aside>
+            <div class="material-symbols-outlined">image</div>
+            <h2>subtítulo</h2>
+        </aside>
+
+        <aside>
+            <div class="material-symbols-outlined">image</div>
+            <h2>subtítulo</h2>
+        </aside>
+    </section>
+
+    <main>
+        <h1>Título</h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit repellat debitis inventore velit mollitia aliquam quidem facilis expedita iusto et dolorem rerum, iure quos at ipsa sunt suscipit laboriosam tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ullam odit recusandae quidem dicta magni deserunt, fuga aliquam odio aliquid, cupiditate accusamus esse iste minima? Magni maiores sapiente dolorem sint! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, quibusdam velit sed, ad asperiores fuga eos consequatur itaque exercitationem numquam suscipit veniam esse aliquam nam dignissimos odio adipisci nihil sit?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ex quasi blanditiis voluptatem ipsum sunt quisquam ullam inventore! Ex ullam quos similique eveniet nulla a totam velit architecto laboriosam at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum odit doloremque id libero possimus sint, dolor maxime cum culpa ullam minus blanditiis nostrum facilis quia labore. Eos, perspiciatis fugiat?
+        </p>
+    </main>
+
+    <footer>
+        <p>Obrigado por visitar nosso site. Acompanhe outros projetos! <a href="https://rgmenezes.github.io/Repositorio-de-teste/" hreflang="pt-br" target="_blank">Rafael Menezes</a> & <a href="https://github.com/RGMenezes" target="_blank">GITHUB</a></p>
+    </footer>
+
+    <script>
+        function ProgressBar(){
+            let progress_bar = document.querySelector("div.header-progress-bar")
+            let doc = document.documentElement
+
+            let cont = parseInt(100 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
+
+            progress_bar.style.width = `${cont}%`
+        }
+        setInterval(ProgressBar, 10)
+    </script>
+</body>
+</html>

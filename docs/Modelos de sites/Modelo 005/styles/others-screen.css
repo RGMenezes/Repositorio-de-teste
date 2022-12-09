@@ -1,13 +1,23 @@
 @charset "UTF-8";
 
+::-webkit-scrollbar{
+    display: inherit;
+}
+
 div.form-background{
     background-image: url(../imagens/img-background-full.jpg);
 }
 
 section.form-layout{
     width: 480px;
-    height: 300px;
+}
 
+section.form-layout > h1{
+    font-size: 3em;
+}
+
+section.form-layout > p{
+    font-size: 1.1em;
 }
 
 form{

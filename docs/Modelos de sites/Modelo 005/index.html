@@ -29,11 +29,21 @@
                 </div>
 
                 <div id="form-user-buttons">
-                    <button>Continuar</button>
-                    <button>Esqueci a senha</button>
+                    <button onclick="HomePage()">Continuar</button>
+                    <button onclick="BackupPage()">Esqueci a senha</button>
                 </div>
             </form>
         </section>
     </div>
+
+    <script>
+        function HomePage(){
+            let url = "home-page.html"
+            window.open(url, "_self")
+        }
+        function BackupPage(){
+            alert("[ERRO 001] Não podemos te redirecionar a esta página!")
+        }
+    </script>
 </body>
 </html>
