@@ -16,11 +16,11 @@
 }
 
 :root{
-    --cor1: #DDD1C7;
+    --cor1: #ccdbdc;
     --cor2: #C2CFB2;
-    --cor3: #8DB580;
-    --cor4: #7E8987;
-    --cor5: #4B4A67;
+    --cor3: #63c7b2;
+    --cor4: #8e6c88;
+    --cor5: #263d42;
     --font-geral: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-titulo: 'Titan One', cursive;
 }
@@ -32,7 +32,7 @@
     font: normal normal 1em var(--font-geral);
 }
 
-/*----------------------------Login-page-------------------------------*/
+/*----------------------------Login page-------------------------------*/
 
 div.form-background{
     position: relative;
@@ -125,9 +125,10 @@ div#form-user-buttons > button:active{
     transition: all 0.3s ease;
 }
 
-/*------------------------------------------------Home-and-others-page----------------------------------------------------*/
+/*------------------------------------------------Home and others page----------------------------------------------------*/
 
 header{
+    z-index: 1;
     position: sticky;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -142,6 +143,16 @@ header > h1{
     font: normal normal 2em var(--font-titulo);
     text-indent: 10px;
     color: var(--cor1);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+header > h1:hover{
+    color: var(--cor3);
+    transition: all .3s ease;
+}
+header > h1:active{
+    transform: scale(0.9);
+    transition: all .3s ease;
 }
 
 div.header-menu{

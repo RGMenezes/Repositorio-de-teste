@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Marca</h1>
+        <h1 onclick="LoginPage()">Marca</h1>
         <div onclick="header_menu()" class="material-symbols-outlined header-menu">menu</div>
         <nav id="menuOptions">
             <a href="#">pag1</a>
@@ -125,6 +125,11 @@
                 menu.style.right = "-50%"
                 cont = 1
             }
+        }
+
+        function LoginPage(){
+            let url = "index.html"
+            window.open(url, "_self")
         }
     </script>
 </body>

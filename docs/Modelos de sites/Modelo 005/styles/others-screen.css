@@ -4,6 +4,8 @@
     display: inherit;
 }
 
+/*------------------------------------Login page----------------------------------------*/
+
 div.form-background{
     background-image: url(../imagens/img-background-full.jpg);
 }
@@ -23,4 +25,82 @@ section.form-layout > p{
 form{
     width: 250px;
     margin: auto;
+}
+
+/*---------------------------------Home and others pages----------------------------------*/
+
+header{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 7fr 1fr;
+}
+header > h1{
+    font-size: 2.7em;
+    align-self: center;
+}
+
+div.header-menu{
+    display: none;
+}
+
+header > nav{
+    display: block;
+    position: static;
+    background-color: transparent;
+    height: fit-content;
+    box-shadow: none;
+    justify-self: end;
+    align-self: center;
+}
+
+header > nav > a{
+    font-size: 1.1em;
+}
+
+section.section-tools{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: visible;
+    height: 350px;
+    justify-items: center;
+    align-items: center;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+}
+main h1{
+    font-size: 2.5em;
+}
+main p{
+    font-size: 1.1em;
+}
+
+footer p{
+    font-size: 0.9em;
+}
+
+
+@media (min-width: 769px){
+
+    section.section-tools{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    section.section-tools > aside{
+        font-size: 1.2em;
+        width: 100px;
+        height: 150px;
+    }
+
+    main > p{
+        font-size: 1.3em;
+    }
+
+    footer p{
+        font-size: 1em;
+    }
 }
