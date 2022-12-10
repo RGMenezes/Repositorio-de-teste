@@ -152,6 +152,15 @@ div.header-menu{
     color: var(--cor1);
     border-radius: 5px;
     border: 2px solid var(--cor1);
+    cursor: pointer;
+}
+div.header-menu:hover{
+    background-color: var(--cor4);
+    transition: all .3s ease;
+}
+div.header-menu:active{
+    transform: scale(0.9);
+    transition: all .3s ease;
 }
 
 div.header-progress{
@@ -167,5 +176,114 @@ div.header-progress-bar{
 }
 
 header > nav{
- display: none;
+    position: fixed;
+    background-color: var(--cor5);
+    top: 10%;
+    right: -50%;
+    display: grid;
+    padding: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.459);
+    transition: all .5s ease;
+}
+
+header > nav > a{
+    margin: 2px;
+    padding: 3px 15px 6px 15px;
+    color: var(--cor2);
+    text-decoration: none;
+    text-align: center;
+    font: 700 normal 1em var(--font-geral);
+    transition: all .3s ease;
+}
+header > nav > a:hover{
+    background-color: var(--cor4);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+header > nav > a:active{
+    transform: scale(0.9);
+    transition: all .3s ease;
+}
+
+section.section-tools{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 98vw;
+    height: 130px;
+    margin: 10px auto;
+    overflow-x: scroll;
+}
+
+section.section-tools > aside{
+    height: 100px;
+    background-color: var(--cor2);
+    margin: 0px 5px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    transition: all 0.15s ease;
+}
+section.section-tools > aside:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+section.section-tools > aside > div{
+    font-size: 3em;
+}
+section.section-tools > aside > h2{
+    font: 600 normal 1.1em var(--font-geral);
+}
+
+main{
+    margin: 5px;
+}
+
+main > h1{
+    text-align: center;
+    margin: 5px;
+    font: normal normal 1.8em var(--font-titulo);
+}
+main > p{
+    font: normal normal 0.95em var(--font-geral);
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 1.7em;
+    margin: 5px 0px;
+}
+
+footer{
+    position: sticky;
+    bottom: 0%;
+    background-color: var(--cor5);
+    border-top: 3px solid var(--cor1);
+}
+
+footer > p{
+    color: var(--cor1);
+    font: 700 normal 0.8em var(--font-geral);
+    text-align: center;
+}
+
+footer a{
+    color: var(--cor3);
+    text-decoration: none;
+    font: normal normal 1em var(--font-geral);
+    transition: all .3s ease;
+}
+footer a:hover{
+    text-decoration: underline;
+    transition: .4s ease;
+}
+footer a:active{
+    color: var(--cor1);
+    transition: all .3s ease;
 }
