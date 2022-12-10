@@ -84,7 +84,7 @@ footer p{
 }
 
 
-@media (min-width: 769px){
+@media (min-width: 992px){
 
     section.section-tools{
         grid-template-columns: repeat(6, 1fr);
