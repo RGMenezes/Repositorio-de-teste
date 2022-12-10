@@ -228,7 +228,7 @@ section.section-tools{
 }
 
 section.section-tools > aside{
-    height: 100px;
+    height: 130px;
     background-color: var(--cor2);
     margin: 0px 5px;
     padding: 4px;
@@ -255,20 +255,20 @@ section.section-tools > aside > h2{
 }
 
 main{
-    margin: 5px;
+    padding: 10px;
 }
 
 main > h1{
     text-align: center;
-    margin: 5px;
+    margin: 10px;
     font: normal normal 1.8em var(--font-titulo);
 }
 main > p{
     font: normal normal 0.95em var(--font-geral);
     text-align: justify;
     text-indent: 10px;
-    line-height: 1.7em;
-    margin: 5px 0px;
+    line-height: 1.9em;
+    margin: 10px 0px;
 }
 
 footer{
