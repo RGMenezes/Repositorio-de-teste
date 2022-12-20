@@ -21,7 +21,12 @@
 }
 
 ::-webkit-scrollbar{
-    
+    height: 8px;
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor1);
+    border: 2px solid var(--cor5);
 }
 
 *{
@@ -56,6 +61,20 @@ header h1{
     color: var(--cor4);
 }
 
+#header-menu{
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    padding: 2px;
+    color: var(--cor4);
+    border-radius: 8px;
+    transition: all .5s ease;
+}
+#header-menu:hover{
+    color: var(--cor3);
+    transition: all .3s ease;
+}
+
 header nav{
     position: fixed;
     top: 50px;
@@ -78,11 +97,11 @@ header nav{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-header:hover > .header-nav-left, .header-nav-left:hover{
+header > #header-menu:hover ~ .header-nav-left, .header-nav-left:hover{
     left: 0px;
     transition: all .3s ease;
 }
-header:hover > .header-nav-right, .header-nav-right:hover{
+header > #header-menu:hover ~ .header-nav-right, .header-nav-right:hover{
     right: 0px;
     transition: all .3s ease;
 }
@@ -128,6 +147,7 @@ header nav a:active{
 }
 
 main{
+    margin: 0px auto 20px auto;
     padding: 8px;
     max-width: 800px;
     background-color: white;
