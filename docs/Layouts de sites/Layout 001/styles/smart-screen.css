@@ -62,6 +62,8 @@ header nav{
     padding: 2px;
     background-color: var(--cor5);
     border: 2px solid var(--cor3);
+    transition-delay: 5s;
+    transition: all .5s ease;
 }
 .header-nav-left{
     left: -73px;
@@ -74,6 +76,14 @@ header nav{
     border-right: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+header:hover > .header-nav-left, .header-nav-left:hover{
+    left: 0px;
+    transition: all .3s ease;
+}
+header:hover > .header-nav-right, .header-nav-right:hover{
+    right: 0px;
+    transition: all .3s ease;
 }
 
 header nav a{
