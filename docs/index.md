@@ -1,11 +1,11 @@
 # Navegando
 
 ## Layouts de sites
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20001/" hreflang="pt-br">Modelo 001</a>  
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20002/" hreflang="pt-br">Modelo 002</a>  
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20003/" hreflang="pt-br">Modelo 003</a>  
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20004/" hreflang="pt-br">Modelo 004</a>  
-<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20005/" hreflang="pt-br">Modelo 005</a>
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20001/" hreflang="pt-br">Layout 001</a>  
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20002/" hreflang="pt-br">Layout 002</a>  
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20003/" hreflang="pt-br">Layout 003</a>  
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20004/" hreflang="pt-br">Layout 004</a>  
+<a href="https://rgmenezes.github.io/Repositorio-de-teste/Layouts%20de%20sites/Layout%20005/" hreflang="pt-br">Layout 005</a>
 
 
 ## Games
