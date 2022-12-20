@@ -21,17 +21,19 @@
 }
 
 ::-webkit-scrollbar{
-    display: none;
+    
 }
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--font-geral);
 }
 
 body{
     background-color: var(--cor5);
+    width: 100%;
 }
 
 header{
@@ -40,9 +42,9 @@ header{
     top: 0px;
     width: 200px;
     margin: auto;
-    border-bottom: 2px solid var(--cor3);
-    border-left: 2px solid var(--cor3);
-    border-right: 2px solid var(--cor3);
+    border-bottom: 2px solid var(--cor4);
+    border-left: 2px solid var(--cor4);
+    border-right: 2px solid var(--cor4);
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
@@ -51,7 +53,7 @@ header h1{
     height: 40px;
     text-align: center;
     font: 900 normal 1.5em var(--font-principal);
-    color: var(--cor3);
+    color: var(--cor4);
 }
 
 header nav{
@@ -61,18 +63,17 @@ header nav{
     flex-flow: column nowrap;
     padding: 2px;
     background-color: var(--cor5);
-    border: 2px solid var(--cor3);
-    transition-delay: 5s;
+    border: 2px solid var(--cor4);
     transition: all .5s ease;
 }
 .header-nav-left{
-    left: -73px;
+    left: -83px;
     border-left: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .header-nav-right{
-    right: -73px;
+    right: -84px;
     border-right: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -88,9 +89,9 @@ header:hover > .header-nav-right, .header-nav-right:hover{
 
 header nav a{
     margin: 2px;
-    padding: 5px 13px;
-    font: 600 normal 1em var(--font-geral);
-    color: var(--cor3);
+    padding: 8px 16px;
+    font: 600 normal 1.1em var(--font-geral);
+    color: var(--cor4);
     text-decoration: none;
     border-radius: 5px;
     transition: all .2s ease;
@@ -99,8 +100,35 @@ header nav a:hover{
     background-color: #384249;
     transition: all .3s ease;
 }
+header nav a:active{
+    color: var(--cor3);
+    transition: all .3s ease;
+}
+
+.section-content{
+    display: grid;
+    overflow-x: scroll;
+    grid-template-columns: 100vw 100vw 100vw;
+    scroll-snap-type: x mandatory;
+}
+
+.section-content aside{
+    margin: 50px 5vw;
+    padding: 8px;
+    scroll-snap-align: center;
+}
+.section-content h2{
+    color: var(--cor4);
+    font: normal normal 1.9em var(--font-extra);
+    text-align: center;
+}
+.section-content p{
+    color: var(--cor4);
+    text-align: center;
+}
 
 main{
-    margin: 8px;
+    padding: 8px;
     max-width: 800px;
+    background-color: white;
 }
