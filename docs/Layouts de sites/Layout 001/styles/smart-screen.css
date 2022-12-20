@@ -10,13 +10,13 @@
 
 :root{
     --cor1: #6F9283;
-    --cor2: #B2A198;
+    --cor2: #384249;
     --cor3: #F7B2BD; 
     --cor4: #E34A6F;
     --cor5: #0D1821;
 
-    --font-principal: 'Charmonman', cursive;
-    --font-extra: 'Frederica', cursive;
+    --font-marca: 'Charmonman', cursive;
+    --font-principal: 'Frederica', cursive;
     --font-geral: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -57,7 +57,7 @@ header{
 header h1{
     height: 40px;
     text-align: center;
-    font: 900 normal 1.5em var(--font-principal);
+    font: 900 normal 1.5em var(--font-marca);
     color: var(--cor4);
 }
 
@@ -66,6 +66,8 @@ header h1{
     left: 5px;
     top: 5px;
     padding: 2px;
+    background-color: var(--cor5);
+    cursor: pointer;
     color: var(--cor4);
     border-radius: 8px;
     transition: all .5s ease;
@@ -82,7 +84,7 @@ header nav{
     flex-flow: column nowrap;
     padding: 2px;
     background-color: var(--cor5);
-    border: 2px solid var(--cor4);
+    border: 2px solid var(--cor1);
     transition: all .5s ease;
 }
 .header-nav-left{
@@ -98,11 +100,21 @@ header nav{
     border-bottom-left-radius: 10px;
 }
 header > #header-menu:hover ~ .header-nav-left, .header-nav-left:hover{
+    border-color: var(--cor4);
     left: 0px;
     transition: all .3s ease;
 }
 header > #header-menu:hover ~ .header-nav-right, .header-nav-right:hover{
+    border-color: var(--cor4);
     right: 0px;
+    transition: all .3s ease;
+}
+header > #header-menu:hover ~ .header-nav-left a, .header-nav-left:hover a{
+    color: var(--cor4);
+    transition: all .3s ease;
+}
+header > #header-menu:hover ~ .header-nav-right a, .header-nav-right:hover a{
+    color: var(--cor4);
     transition: all .3s ease;
 }
 
@@ -110,13 +122,13 @@ header nav a{
     margin: 2px;
     padding: 8px 16px;
     font: 600 normal 1.1em var(--font-geral);
-    color: var(--cor4);
+    color: var(--cor1);
     text-decoration: none;
     border-radius: 5px;
     transition: all .2s ease;
 }
 header nav a:hover{
-    background-color: #384249;
+    background-color: var(--cor2);
     transition: all .3s ease;
 }
 header nav a:active{
@@ -137,12 +149,12 @@ header nav a:active{
     scroll-snap-align: center;
 }
 .section-content h2{
-    color: var(--cor4);
-    font: normal normal 1.9em var(--font-extra);
+    color: var(--cor1);
+    font: normal normal 1.9em var(--font-principal);
     text-align: center;
 }
 .section-content p{
-    color: var(--cor4);
+    color: var(--cor1);
     text-align: center;
 }
 
@@ -151,4 +163,85 @@ main{
     padding: 8px;
     max-width: 800px;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.527);
+}
+
+main h1{
+    padding: 30px 0px 8px 0px;
+    font: 900 normal 2.1em var(--font-principal);
+    text-align: center;
+}
+main h2{
+    padding: 27px 0px 5px 0px;
+    font: 600 normal 1.6em var(--font-principal);
+}
+main h3{
+    font-size: 1.35em;
+    padding: 20px 0px 5px 0px;
+    text-indent: 5px;
+}
+main p{
+    font-size: 1.05em;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.6em;
+}
+
+main section{
+    margin: 30px 0px 10px 0px;
+    padding: 5px;
+    background-color: var(--cor5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.37);
+}
+main section h1{
+    font: normal normal 2em var(--font-principal);
+    color: var(--cor1);
+    padding: 6px 0px;
+}
+main section nav{
+    display: grid;
+    width: 100%;
+}
+main section nav a{
+    margin: 2px 0px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font: normal normal 1.2em var(--font-geral);
+    color: var(--cor1);
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+main section nav a:hover{
+    background-color: var(--cor2);
+    transition: all .3s ease;
+}
+main section nav a:active{
+    color: var(--cor3);
+}
+
+footer{
+    padding: 2px;
+    background-color: var(--cor5);
+    border-top: 2px solid var(--cor1);
+}
+footer p{
+    font: normal normal 0.8em var(--font-geral);
+    color: var(--cor1);
+    text-align: center;
+}
+footer a{
+    color: var(--cor4);
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all .5s ease;
+}
+footer a:hover{
+    background-color: var(--cor2);
+    transition: all .3s ease;
+}
+footer a:active{
+    color: var(--cor3);
 }
