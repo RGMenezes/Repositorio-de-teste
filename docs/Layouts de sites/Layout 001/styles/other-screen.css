@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 50px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+header h1{
+
+    height: 70px;
+    background-color: var(--cor5);
+    font-size: 2.4em;
+    border-bottom: 2px solid var(--cor4);
+    border-left: 2px solid var(--cor4);
+    border-right: 2px solid var(--cor4);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+header nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: static;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+
+}
+
+header nav a{
+    color: var(--cor4);
+}
+
+#header-menu{
+    display: none;
+}
